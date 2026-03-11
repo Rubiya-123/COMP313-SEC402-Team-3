@@ -22,4 +22,12 @@ public class CarService {
     public Car getCarById(Long id){
         return repo.findById(id).orElse(null);
     }
+
+    public Car saveCar(Car car){
+        return repo.save(car);
+    }
+
+    public void deleteCar(Long id){
+        repo.deleteById(id);
+    }
 }
