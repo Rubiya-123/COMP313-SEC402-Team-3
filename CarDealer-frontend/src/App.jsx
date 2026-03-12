@@ -3,6 +3,8 @@ import Home from "./Home";
 import CarDetails from "./CarDetails";
 import ViewInquiries from "./ViewInquiries";
 import ManageVehicles from "./ManageVehicles";
+import ViewTestDrives from "./ViewTestDrives";
+
 
 function App() {
     return (
@@ -12,6 +14,7 @@ function App() {
                 <Route path="/car/:id" element={<CarDetails />} />
                 <Route path="/inquiries" element={<ViewInquiries />} />
                 <Route path="/manage-vehicles" element={<ManageVehicles />} />
+                <Route path="/test-drives" element={<ViewTestDrives />} />
             </Routes>
         </BrowserRouter>
     );

@@ -29,6 +29,14 @@ function Navbar() {
                     Manage Request
                 </button>
 
+                <button
+                   style={styles.button}
+                   onClick={() => navigate("/test-drives")}
+                >
+                   Manage Test Drives
+                </button>
+
+
                 <button style={styles.sign}>Hello, Sign In</button>
             </div>
         </nav>
