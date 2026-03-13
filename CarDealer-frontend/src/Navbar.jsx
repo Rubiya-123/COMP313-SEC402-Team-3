@@ -10,34 +10,32 @@ function Navbar() {
                 TOYOTA
             </div>
 
-            <div>
+            <div style={styles.menu}>
                 <button style={styles.button} onClick={() => navigate("/")}>
                     Browse Vehicles
                 </button>
 
                 <button
                     style={styles.button}
-                    onClick={() => navigate("/manage-vehicles")}
+                    onClick={() => navigate("/")}
                 >
-                    Manage Vehicle
+                    Submit Inquiry
                 </button>
 
                 <button
                     style={styles.button}
-                    onClick={() => navigate("/inquiries")}
+                    onClick={() => navigate("/")}
                 >
-                    Manage Request
+                    Request Test Drive
                 </button>
 
-                <button
-                   style={styles.button}
-                   onClick={() => navigate("/test-drives")}
-                >
-                   Manage Test Drives
+               
+
+                
+
+                <button style={styles.sign}>
+                    Hello, Sign In
                 </button>
-
-
-                <button style={styles.sign}>Hello, Sign In</button>
             </div>
         </nav>
     );
@@ -52,21 +50,33 @@ const styles = {
         color: "white",
         alignItems: "center"
     },
+
     logo: {
         fontSize: "22px",
         fontWeight: "bold",
         cursor: "pointer"
     },
+
+    menu: {
+        display: "flex",
+        alignItems: "center",
+        gap: "10px"
+    },
+
     button: {
-        marginRight: "10px",
         padding: "8px 15px",
         background: "#e4002b",
         border: "none",
         color: "white",
         cursor: "pointer"
     },
+
     sign: {
-        padding: "8px 15px"
+        padding: "8px 15px",
+        background: "#c62828",
+        border: "none",
+        color: "white",
+        cursor: "pointer"
     }
 };
 

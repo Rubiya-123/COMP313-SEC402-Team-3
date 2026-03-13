@@ -5,6 +5,9 @@ import ViewInquiries from "./ViewInquiries";
 import ManageVehicles from "./ManageVehicles";
 import ViewTestDrives from "./ViewTestDrives";
 
+import AdminLogin from "./AdminLogin";
+import Dashboard from "./Dashboard";
+
 
 function App() {
     return (
@@ -15,7 +18,15 @@ function App() {
                 <Route path="/inquiries" element={<ViewInquiries />} />
                 <Route path="/manage-vehicles" element={<ManageVehicles />} />
                 <Route path="/test-drives" element={<ViewTestDrives />} />
-            </Routes>
+           
+
+           
+
+        <Route path="/admin" element={<AdminLogin />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+ </Routes>
+    
+
         </BrowserRouter>
     );
 }

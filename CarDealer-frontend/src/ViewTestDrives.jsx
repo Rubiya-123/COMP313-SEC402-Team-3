@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "./Navbar";
+import Sidebar from "./Sidebar";
 
 function ViewTestDrives() {
   const [requests, setRequests] = useState([]);
@@ -14,10 +14,10 @@ function ViewTestDrives() {
   }, []);
 
   return (
-    <div>
-      <Navbar />
+     <div style={{ display: "flex" }}>
+        <Sidebar />
 
-      <div style={{ padding: "40px" }}>
+        <div style={{ padding: "40px", flex: 1 }}>
         <h1>Staff Test Drive Requests</h1>
 
         {requests.length === 0 ? (

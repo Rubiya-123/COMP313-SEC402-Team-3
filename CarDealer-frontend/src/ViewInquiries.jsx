@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "./Navbar";
+import Sidebar from "./Sidebar";
 
 function ViewInquiries() {
   const [inquiries, setInquiries] = useState([]);
@@ -12,10 +12,10 @@ function ViewInquiries() {
   }, []);
 
   return (
-    <div>
-      <Navbar />
+     <div style={{ display: "flex" }}>
+        <Sidebar />
 
-      <div style={{ padding: "40px" }}>
+        <div style={{ padding: "40px", flex: 1 }}>
         <h1>Staff Inquiry View</h1>
 
         {inquiries.length === 0 ? (

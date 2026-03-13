@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "./Navbar";
-
+import Sidebar from "./Sidebar";
 function ManageVehicles() {
     const [cars, setCars] = useState([]);
     const [formData, setFormData] = useState({
@@ -106,10 +105,10 @@ function ManageVehicles() {
     };
 
     return (
-        <div>
-            <Navbar />
+        <div style={{ display: "flex" }}>
+        <Sidebar />
 
-            <div style={{ padding: "40px" }}>
+        <div style={{ padding: "40px", flex: 1 }}>
                 <h1>Manage Vehicle Listings</h1>
 
                 <form
